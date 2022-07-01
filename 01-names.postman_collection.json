@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "b7cab18e-668d-4dab-9998-7c4af727bc90",
+		"name": "01-names",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fernando\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names/Fernando/Federico",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names",
+						"Fernando",
+						"Federico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteName",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names/Federico",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names",
+						"Federico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clearNames",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names/clear",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
